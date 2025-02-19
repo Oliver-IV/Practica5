@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:src="@drawable/imagen1"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:layout_marginTop="@dimen/input_margin" />
+
+    <EditText
+        android:id="@+id/last_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:layout_marginTop="@dimen/input_margin" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:textSize="30dp"
+        android:layout_marginTop="@dimen/input_margin" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        android:layout_marginTop="@dimen/input_margin" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:layout_marginLeft="0dp"
+        android:textSize="20dp"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
+        android:text="@string/sign_in"
+        android:background="@color/rojo"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

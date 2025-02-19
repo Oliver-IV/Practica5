@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MenuActivity"
+    android:paddingHorizontal="50dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grupo2"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Restaurant Logo" />
+
+    <TextView
+        android:id="@+id/menuTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="our menu"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button_antojitos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/antojitos"
+            android:textColor="@color/white"
+            android:background="@color/rojo"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_paddings" />
+
+        <Button
+            android:id="@+id/button_especialidades"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/especialidades"
+            android:textColor="@color/white"
+            android:background="@color/rojo"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_paddings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button_combinations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/combinations"
+            android:textColor="@color/white"
+            android:background="@color/rojo"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_paddings" />
+
+        <Button
+            android:id="@+id/button_tortas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tortas"
+            android:textColor="@color/white"
+            android:background="@color/rojo"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_paddings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button_sopas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sopas"
+            android:textColor="@color/white"
+            android:background="@color/rojo"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_paddings" />
+
+        <Button
+            android:id="@+id/button_drinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/drinks"
+            android:textColor="@color/white"
+            android:background="@color/rojo"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_paddings" />
+    </LinearLayout>
+
+</LinearLayout>
